@@ -11,15 +11,14 @@
   margin-bottom: 3px;
 }
 .float_image_right {
-  display: table;
   float: right;
   padding-left: 30px;
   padding-bottom: 10px;
 }
 .float_image_right p {
-  display: table-caption;
   caption-side: bottom;
-  padding-left: 30px;
+  padding-left: 30px
+  color:#ddd;
   font-style: italic;
   text-align: right;
 }

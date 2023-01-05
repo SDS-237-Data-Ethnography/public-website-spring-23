@@ -1,3 +1,0 @@
-The best way to get in touch with me is via Slack. I can't guarantee that I will respond to messages sent via email. If you have course related questions, I encourage you to ask them in the `#sds-237-questions` channel. When discretion is needed, feel free to DM. Please reserve more formal concerns like grades or accommodation requests for an in-person (or in-person virtual) conversation. 
-
-*During the week, I will try my best to answer all Slack messages within 24 hours of receiving them. Please note that to maintain my own work-life balance, I often don't answer Slack messages on the weekends. It's important that you plan when you start your assignments accordingly.*

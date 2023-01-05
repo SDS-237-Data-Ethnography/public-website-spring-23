@@ -1,6 +1,6 @@
 create_standards_button <- function(text, type, size){
   if(type == "literacy"){
-    bs_button(toupper(text), "danger", size)
+    bs_button(toupper(text), "warning", size)
   }
   else if(type == "method"){
     bs_button(toupper(text), "success", size)
@@ -23,9 +23,9 @@ print_standards_buttons <- function(standards, size = "small"){
   }
 }
 
-print_this_week_standards_buttons <- function(topic){
+print_this_week_standards_buttons <- function(topic_name){
   this_week_standards <- topic_standards %>% 
-    filter(topic_abbr == topic) %>%
+    filter(topic_abbr == topic_name) %>%
     select(standard_id, standard, type) %>%
     filter(!is.na(standard_id)) %>%
     arrange(standard_id)
