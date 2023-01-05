@@ -1,0 +1,4 @@
+Student consultation hours are a great opportunity for us to chat about what you're learning in the course, clarify expectations on assignments, and review work in progress. I also love when students drop in to consultation hours to request book recommendations, discuss career or research paths, or just to say hi! I encourage each student in the course to join consultation hours at least once this semester. The link to connect to consultation hours is listed in Moodle. If you're unable to attend my consultation hours at the regularly scheduled time, there is link on Moodle to book a meeting with me. 
+
+* Monday, 2-3
+* Wednesday, 3-4

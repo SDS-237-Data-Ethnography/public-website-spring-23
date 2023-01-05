@@ -1,0 +1,93 @@
+---
+title: "Schedule"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r imports, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(bsplus)
+library(fontawesome)
+library(htmltools)
+library(RefManageR)
+library(lubridate)
+
+bib <- ReadBib("DataEthnography.bib")
+BibOptions(check.entries = FALSE, 
+           bib.style = "authoryear", 
+           style = "html",
+           dashed = TRUE,
+           first.inits = FALSE, 
+           no.print.fields = "issn")
+
+topics <- read.csv("data/topics.csv") %>%
+  mutate(date = mdy(date)) %>%
+  arrange(date)
+
+required_reading <- read.csv("data/required_reading.csv")
+optional_reading <- read.csv("data/optional_reading.csv")
+standards <- read.csv("data/standards.csv")
+topic_standards <- read.csv("data/topic_standards.csv")
+writing_assignments <- read.csv("data/writing_assignments.csv")
+project_assignments <- read.csv("data/project_assignments.csv")
+announcements <- read.csv("data/announcements.csv")
+
+required_reading[required_reading == ""] <- NA
+optional_reading[optional_reading == ""] <- NA
+standards[standards == ""] <- NA
+topic_standards[topic_standards == ""] <- NA
+writing_assignments[writing_assignments == ""] <- NA
+project_assignments[project_assignments == ""] <- NA
+announcements[announcements == ""] <- NA
+
+topic_standards <- 
+  topic_standards %>%
+  left_join(standards)
+```
+
+```{r source-files, include=FALSE}
+source("R/print_assignments.R", local = knitr::knit_global())
+source("R/buttons.R", local = knitr::knit_global())
+```
+
+<div class="alert alert-dismissible alert-info">
+  Styling and infrastructure for this page inspired by <a class="white-link" rel="license" href="https://beanumber.github.io/sds192/schedule.html">related syllabi</a> produced by Ben Baumer and R. Jordan Crouser.
+</div>
+
+<div class="alert alert-dismissible alert-warning">
+  All readings for this course will be available in our course Perusall, which is linked in Moodle. To get credit for that reading, you must post at least three substantive comments in Perusall for the required reading before class. 
+</div>
+
+```{r print-schedule, message=FALSE, results='asis'}
+for (i in 1:nrow(topics)){
+  
+  todays_topic <- topics %>%
+    slice(i)
+  
+  date_format <- stamp("January 17, 1999")
+  
+  cat(paste("## ", date_format(ymd(todays_topic$date[1]))))
+  cat("\n")
+  cat(paste("### ", todays_topic$topic[1], " {.tabset}"))
+  cat("\n")
+  print_this_week_standards_buttons(todays_topic$topic_abbr[1])
+  cat("\n")
+  cat("\n")
+  cat("#### Due Today")
+  cat("\n")
+  print_due_today(todays_topic$topic_abbr[1])
+  cat("\n")
+  cat("#### Optional Further Reading")
+  cat("\n")
+  print_further_reading(todays_topic$topic_abbr[1])
+  cat("\n")
+  cat("#### Announcements")
+  cat("\n")
+  print_today_announcements(todays_topic$topic_abbr[1])
+  cat("\n")
+}
+```
+
+

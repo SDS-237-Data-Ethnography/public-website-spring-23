@@ -1,0 +1,29 @@
+name: sds237
+output_dir: docs
+output:
+  html_document:
+    theme: flatly
+    toc: true
+    toc_depth: 2
+    toc_float:
+      collapsed: true
+      smooth_scroll: false
+    highlight: tango
+    self_contained: false
+    lib_dir: libs
+    css: "css/custom.css"
+navbar:
+  title: "SDS 237: Data Ethnography"
+  left:
+    - text: "Syllabus"
+      href: index.html
+    - text: "Assessment"
+      href: grading_contract.html
+    - text: "Learning Dimensions"
+      href: learning_dimensions.html
+    - text: "Schedule"
+      href: schedule.html
+  right: 
+    - icon: fa-github fa-lg
+      href: https://github.com/SDS-237-Data-Ethnography/
+

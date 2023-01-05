@@ -1,0 +1,1 @@
+Using the proper pronouns for our students is foundational to a safe, respectful classroom environment that creates a culture of trust. For information on pronouns and usage, please see the Office of Equity and Inclusion link here: [Pronouns](https://www.smith.edu/about-smith/equity-inclusion/gender-identity/pronouns)

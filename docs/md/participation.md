@@ -1,0 +1,1 @@
+Active participation in this course is generally expected and encouraged. That said, we all have off-days - be it from illness, sadness, heartbreak, or exhaustion. I too will have off-days where my words just don't seem to cohere, or my brain will feel jumbled. Because of this, I've provided a number of ways to demonstrate engagement throughout the semester.
