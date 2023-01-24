@@ -28,7 +28,7 @@ Without rich documentation, quantitative data can strip away critical context ne
 3. Strategically apply relevant ethnographic methods to the study of a data setting or artifact
 4. Produce data documentation and visualizations that account for the cultural contexts of data production, categorization, measurement, and use
 
-Classes will be held on Mondays and Wednesdays from 9:25 PM to 10:40 PM. 
+Classes will be held on Tuesdays and Thursdays from 9:25 PM to 10:40 PM. 
 
 ## Course Instructor
 
@@ -45,7 +45,16 @@ I am a cultural anthropologist that studies how civic data gets produced, how co
 
 ## Pedagogical Partner
 
-Rose Evard (she/her) is a ’23 Biology and Statistics & Data Science double major who took SDS 237 last semester.  She’s passionate about bringing data science principles and strategies into her biology research.  She has been involved in various forms of student support, including working as a Data Assistant and SDS Tutor last semester.  Rose can provide technical guidance for GitHub and R, as well as advice on how to approach the course and assignments.
+::: float_image_right
+```{r}
+#| label: Rose Evard
+#| fig-cap: Rose Evard, she/her
+#| out.width: "200px"
+knitr::include_graphics("img/Evard_Sum_2022.jpg")
+```
+:::
+
+Rose Evard (she/her) is a ’23 Biology and Statistics & Data Science double major who took SDS 237 last fall.  She’s passionate about bringing data science principles and strategies into her biology research.  This is her second semester as a Pedagogical Partner for SDS 237.  Rose will participate in class discussions, provide guidance for approaching assignments, and is available for technical assistance.
 
 ### Getting in Touch
 
@@ -56,12 +65,16 @@ I can best support students in this course when I can readily keep tabs on our c
 
 *During the week, I will try my best to answer all Slack messages within 24 hours of receiving them. Please note that to maintain my own work-life balance, I often don't answer Slack messages late in the evenings or on the weekends. It's important that you plan when you start your assignments accordingly.*
 
-#### Office Hours
+#### Meeting with Me
 
-Office hours are a great opportunity for us to chat about what you're learning in the course, clarify expectations on assignments, and review work in progress. I also love when students drop in to office hours to request book recommendations, discuss career or research paths, or just to say hi! I encourage each student in the course to join office hours at least once this semester. If you're unable to attend my office hours at the regularly scheduled time, there is link on Moodle to book a meeting with me.
+Meeting with me outside of class is a great opportunity for us to chat about what you're learning in the course, clarify expectations on assignments, and review work in progress. I also love when students drop in to office hours to request book recommendations, discuss career or research paths, or just to say hi! 
 
--   Tuesday, 3-4, McConnell 212-213
--   Thursday, 3-5, McConnell 212-213
+There are two ways to meet with me. If you would like to have a one-on-one private conversation, I ask that you schedule an appointment with me via the [booking form on Moodle](https://moodle.smith.edu/mod/url/view.php?id=996336). For support on class topics, you may drop-in during my regularly scheduled office hours.
+
+-   Monday, 11-12, Sabin-Reed 331
+-   Tuesday, 11-12, Sabin-Reed 331
+-   Thursday, 11-12, Sabin-Reed 331
+
 :::
 
 ## Course Texts
@@ -98,7 +111,7 @@ I understand that you will sometimes need to prioritize other things over meetin
 1. First, one of the key aims of assignments in this course is to support you in learning to become more perceptive to data environments surrounding you. Because of this I've deliberately spread course assignments out over the semester in order to help you gain practice in consistently paying attention to these environments. This critical mode of thinking can't be cultivated effectively if the work is being crammed into later parts of the semester. 
 2. Second, because this course emphasizes student growth over achievement, I also want to ensure that I can provide feedback on your writing in time for you to incorporate it into future assignments. 
 
-My late policy attempts to balance flexibility with accountability. There is a 24-hour grace period on all written assignments. There will be no penalties for submitting the written assignment within this 24-hour period, and you do not need to inform me that you intend to take the extra time. You can also request up to a 72-hour extension on any written assignment, as long *as you make that request at least 48 hours before the original assignment due date*. You can request an extension by filling out the Extension Request form on Moodle, and I will confirm your extension on Slack. Beyond this, late assignments will not be accepted. 
+There is a 24-hour grace period on all written assignments. There will be no penalties for submitting the written assignment within this 24-hour period, and you do not need to inform me that you intend to take the extra time. You can also request up to a 72-hour extension on any written assignment, as long *as you make that request at least 48 hours before the original assignment due date*. You can request an extension by filling out the [Extension Request form](https://moodle.smith.edu/mod/questionnaire/view.php?id=996325) on Moodle, and I will confirm your extension on Slack. Beyond this, late assignments will not be accepted. 
   
 Note that this policy does not apply to reading assignments/Perusall annotations. *Reading assignments/Perusall annotations need to be completed by the due date for credit.*
 
@@ -113,6 +126,7 @@ Any cases of dishonesty or plagiarism will be reported to the Academic Honor Boa
 -   Failing to cite your sources correctly.
 -   Falsifying or misrepresenting information in submitted work.
 -   Paying another student or service to complete assignments for you.
+-   Submitting work generated by artificially intelligent tools such as chatGPT
 
 ### Participation
 

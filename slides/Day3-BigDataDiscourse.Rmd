@@ -110,16 +110,6 @@ class: center, middle
 * Highlight statements that indicate Anderson's worldview as you read
 * Referencing the Discourse Analysis in 9 Steps, discuss components of Anderson's discourse in small groups. Be sure to discuss Steps 4, 5, and 6 particularly.
 
----
 
-class: center, middle
-# What were three takeaways from today?
 
----
-
-# For Wednesday
-
-* No reading. 
-* If you haven't completed our course infrastructure, please do so by Wednesday. Be sure to post questions to Slack if you are struggling.
-* DM me on if you'd like to lead a class discussion.
 

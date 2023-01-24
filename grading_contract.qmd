@@ -53,15 +53,20 @@ Ethnography is at its best when it involves collaborative inquiry and interpreta
 
 #### Contributing on Slack
 
-The first opportunity for earning community labor points is through posting in the `#sds-237-discussions` Slack channel. For every conversation that you initiate in this channel, you will earn 1 community labor point. For every conversation that you respond to in this channel with substantive summary, critique, or reflection, you will earn 1 community labor point.
+The first opportunity for earning community labor points is through posting in the `#sds-237-discussions` Slack channel. For every conversation that you initiate in this channel, you will earn 1 community labor point. For every conversation that you respond to in this channel with substantive summary, critique, or reflection, you will earn 1 community labor point. Finally, for every question that you *answer* in the `#sds-237-questions` channel, you will earn 1 community labor point. 
 
 #### Completing Group Evaluations
 
-Mid-way through the semester you will have an opportunity to evaluate your own contributions to your group work, along with that of your peers. Your feedback will be shared with members of your group. Completing group evaluations will count for 2 community labor points. 
+Mid-way through the semester you will have an opportunity to evaluate your own contributions to your group work, along with that of your peers. Your feedback will be shared with members of your group. Completing group evaluations will count for 1 community labor point. 
 
 #### Participating in Peer Review Workshops
 
 Throughout the semester, I will set up workshops where students may submit their written work for peer review in preparation for assignment submissions. Each peer review workshop that you participate in will count for 2 community labor points. 
+
+#### Contributing Class Notes
+
+Following a class period, up to two students may type up a 1-page outline of what was covered in that class period and post a link to that outline in `#sds-237-class-notes`. You can sign-up to serve as the notetaker for a certain class [here](https://moodle.smith.edu/mod/scheduler/view.php?id=1002501). These notes should be a full, single-space page, and should make sense to someone that was not present in class. Each class note outline that you contribute will count for 2 community labor points. 
+
 
 Note that throughout the semester, I may offer additional opportunities to earn community labor points as unexpected forms of course labor arise. 
 
@@ -83,7 +88,7 @@ I've been very deliberate in pacing your assignments for two reasons - first, be
 
 ### How can I best keep track of my labor in this course?
 
-Throughout the semester, you will be asked to keep track of your labor via a log that I will make available on Moodle. I will reference this log to calculate certain aspects of your final grade. Instructions for using the labor log will be provided in the first week of the course.
+Throughout the semester, you will be asked to keep track of your labor via a log that will be available in your GitHub portfolio. I will reference this log to calculate certain aspects of your final grade. Instructions for using the labor log will be provided in the second week of the course.
 
 ### Can I earn +/- grades in this course?
 
