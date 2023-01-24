@@ -17,12 +17,13 @@ library(htmltools)
 library(RefManageR)
 library(lubridate)
 bib <- ReadBib("DataEthnography.bib")
-BibOptions(check.entries = FALSE, 
+BibOptions(check.entries = FALSE,
            bib.style = "authoryear", 
            style = "html",
            dashed = TRUE,
            first.inits = FALSE, 
-           no.print.fields = "issn")
+           no.print.fields = c("url", "doi", "issn"))
+
 topics <- read.csv("data/topics.csv") %>%
   mutate(date = mdy(date)) %>%
   arrange(date)

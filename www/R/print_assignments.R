@@ -7,6 +7,7 @@ print_readings <- function(reading_df){
     mutate(chapter = ifelse(is.na(chapter), "", paste(chapter, ",")))
   
   if(nrow(reading_keys > 0)) {
+    
     reading_list <- sapply(reading_keys$reading, function(x) {
       
       paste0(
