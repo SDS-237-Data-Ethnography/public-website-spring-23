@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lindsay Poirier   Statistical &amp; Data Sciences, Smith College  ">
+
+<title>Day Five: Thick Data for Big Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">SDS 237: Data Ethnography</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Syllabus</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../grading_contract.html">Grading Contract</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../learning_dimensions.html">Learning Dimensions</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html">Schedule</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#announcements" id="toc-announcements" class="nav-link active" data-scroll-target="#announcements">Announcements</a></li>
+  <li><a href="#turn-to-your-neighbor-and-discuss" id="toc-turn-to-your-neighbor-and-discuss" class="nav-link" data-scroll-target="#turn-to-your-neighbor-and-discuss">Turn to your neighbor and discuss:</a></li>
+  <li><a href="#discliplinary-conventions" id="toc-discliplinary-conventions" class="nav-link" data-scroll-target="#discliplinary-conventions">Discliplinary Conventions</a></li>
+  <li><a href="#disciplinary-genres" id="toc-disciplinary-genres" class="nav-link" data-scroll-target="#disciplinary-genres">Disciplinary Genres</a></li>
+  <li><a href="#what-is-ethnography" id="toc-what-is-ethnography" class="nav-link" data-scroll-target="#what-is-ethnography">What is ethnography?</a></li>
+  <li><a href="#methods-of-ethnography" id="toc-methods-of-ethnography" class="nav-link" data-scroll-target="#methods-of-ethnography">Methods of Ethnography</a></li>
+  <li><a href="#tools-of-ethnography" id="toc-tools-of-ethnography" class="nav-link" data-scroll-target="#tools-of-ethnography">Tools of Ethnography</a></li>
+  <li><a href="#what-is-thick-description" id="toc-what-is-thick-description" class="nav-link" data-scroll-target="#what-is-thick-description">What is thick description?</a></li>
+  <li><a href="#for-wednesday" id="toc-for-wednesday" class="nav-link" data-scroll-target="#for-wednesday">For Wednesday</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Day Five: Thick Data for Big Data</h1>
+<p class="subtitle lead">SDS 237: Data Ethnography</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p> </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="announcements" class="level1">
+<h1>Announcements</h1>
+<ul>
+<li>You will be assigned project groups by Wednesday.</li>
+<li>Your first group project - the team contract - will be due next week. This will be posted on Wednesday.</li>
+<li>Reminder: All course slides are posted on our course website under Announcements.</li>
+<li>DM me by next Wednesday if you’d like to lead class discussion.</li>
+</ul>
+<hr>
+<p>class: center, middle # What were three takeaways from class on Monday?</p>
+<hr>
+<p>class: center, middle # Imagine you were an ethnographer attending Astro Hack Week. Write a quantitative research question for a study you might conduct. Now write a qualitative research question.</p>
+<hr>
+</section>
+<section id="turn-to-your-neighbor-and-discuss" class="level1">
+<h1>Turn to your neighbor and discuss:</h1>
+<ul>
+<li>How would these research projects look different?</li>
+</ul>
+<hr>
+</section>
+<section id="discliplinary-conventions" class="level1">
+<h1>Discliplinary Conventions</h1>
+<ul>
+<li>What is considered a relevant research question?</li>
+<li>What kind of arguments are made?</li>
+<li>What kind of data is collected/produced/presented?</li>
+<li>How is collaboration valued?</li>
+<li>When/how is data shared?</li>
+</ul>
+<hr>
+</section>
+<section id="disciplinary-genres" class="level1">
+<h1>Disciplinary Genres</h1>
+<ul>
+<li>Is text written in active or passive voice? Personal pronouns?</li>
+<li>Are subheadings chosen based on academic conventions?</li>
+<li>What kind of evidence is presented to persuade the reader? Statistics? Anecdotes?</li>
+<li>In what ways are research methods explicated?</li>
+<li>How and with what sort of detail are objects of study described?</li>
+<li>What role do poetics and metaphor play in the text? Can you identify emotion?</li>
+<li>What reflexive moves (self-reflection) does the author make? How do they elaborate their standpoint in/through the text?</li>
+</ul>
+<hr>
+</section>
+<section id="what-is-ethnography" class="level1">
+<h1>What is ethnography?</h1>
+<ul>
+<li>Study of human cultures
+<ul>
+<li>Culture often defined as “semiotic”</li>
+<li>Ethnographers aim to interpret the underlying meanings of surface actions and expressions</li>
+<li>Make the “familiar strange”</li>
+</ul></li>
+<li>Often characterized as interpretivist and qualitative</li>
+<li>Typically involves extended, immersive fieldwork</li>
+<li>Has historically been a solo discipline</li>
+<li>Qualitative data rarely shared</li>
+</ul>
+<hr>
+</section>
+<section id="methods-of-ethnography" class="level1">
+<h1>Methods of Ethnography</h1>
+<ul>
+<li>Participant Observation
+<ul>
+<li>Observing interaction and behaviors “in the field”</li>
+</ul></li>
+<li>Interviewing
+<ul>
+<li>Engaging in semi-structured conversations with informants</li>
+</ul></li>
+<li>Archival Research
+<ul>
+<li>Curating and interpreting historical documents and artifacts</li>
+</ul></li>
+<li>Discourse analysis
+<ul>
+<li>Interpreting the cultural meaning interwoven in texts and speech</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="tools-of-ethnography" class="level1">
+<h1>Tools of Ethnography</h1>
+<ul>
+<li>Field Notebooks
+<ul>
+<li>Document thick descriptions of observations</li>
+</ul></li>
+<li>Recording Devices
+<ul>
+<li>Audio and video documentation of interviews</li>
+</ul></li>
+<li>Coding Software
+<ul>
+<li>Draw out consistent themes of notes and interviews</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="what-is-thick-description" class="level1">
+<h1>What is thick description?</h1>
+<p>.pull-left[ <img src="https://images.pexels.com/photos/8159657/pexels-photo-8159657.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="img-fluid"></p>
+<p>]</p>
+<p>.pull-right[</p>
+<ul>
+<li>Describe in the “thinnest” terms possible what is happening in this image.</li>
+<li>Thick description moves towards interpreting its cultural meaning.</li>
+<li>Example drawn from a famous 1973 chapter by Clifford Geertz: “Thick Description: Towards an Interpretive Theory of Culture.”</li>
+</ul>
+<p>]</p>
+<hr>
+<p>class: center, middle # How might we interpret the role of hex stickers in the R community? <img src="https://miro.medium.com/max/1400/1*JX6yfzlNuImKJwzjSXr47w.png" class="img-fluid"> Image source: Beiers, Sophie. 2020. “Tips &amp; Tricks from the Newbies of Rstudio::Conf2020.” <em>ACLU Tech &amp; Analytics (blog)</em>. March 13, 2020. https://medium.com/aclu-tech-analytics/tips-tricks-from-the-newbies-of-rstudio-conf2020-5ccc780ba0e7.</p>
+<hr>
+<p>class: center, middle # What were three takeaways from today?</p>
+<hr>
+</section>
+<section id="for-wednesday" class="level1">
+<h1>For Wednesday</h1>
+<ul>
+<li>Let me know if you’d like to lead a class discussion</li>
+<li>Be on the lookout for project group posting</li>
+<li>Reading for Wednesday
+<ul>
+<li>What are Biruk’s research questions?</li>
+<li>What does Biruk make known about her assumptions/beliefs/values as she begins to interpret data?</li>
+</ul></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

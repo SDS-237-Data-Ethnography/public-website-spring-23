@@ -106,5 +106,17 @@ execute:
 - Perusall
 - Slack
 
+---
+
+## Reading Tuesday
+
+- How do the authors define big data? What’s special about their definition? How does it differ from other attempts to define big data?
+
+- Crawford and boyd suggest that big data changes the definition of knowledge, but perhaps not in the ways that certain pundits suggest. What are some examples they provide of the way big data changes the definition of knowledge? What warnings do they convey?
+
+- Why do the authors suggest that claims to objectivity and accuracy are misleading?
+
+- This paper was written in 2012. More than a decade later, what has changed?
+
 
 

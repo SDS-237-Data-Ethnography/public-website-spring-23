@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lindsay Poirier   Statistical &amp; Data Sciences, Smith College  ">
+
+<title>Day Four: Binary Oppositions of Big Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">SDS 237: Data Ethnography</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Syllabus</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../grading_contract.html">Grading Contract</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../learning_dimensions.html">Learning Dimensions</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html">Schedule</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#announcements" id="toc-announcements" class="nav-link active" data-scroll-target="#announcements">Announcements</a></li>
+  <li><a href="#turn-to-your-neighbor-and-discuss" id="toc-turn-to-your-neighbor-and-discuss" class="nav-link" data-scroll-target="#turn-to-your-neighbor-and-discuss">Turn to your neighbor and discuss:</a></li>
+  <li><a href="#binary-oppositions" id="toc-binary-oppositions" class="nav-link" data-scroll-target="#binary-oppositions">Binary Oppositions</a></li>
+  <li><a href="#hierarchies-in-binary-oppositions" id="toc-hierarchies-in-binary-oppositions" class="nav-link" data-scroll-target="#hierarchies-in-binary-oppositions">Hierarchies in Binary Oppositions</a></li>
+  <li><a href="#natureculture" id="toc-natureculture" class="nav-link" data-scroll-target="#natureculture">Nature/Culture</a></li>
+  <li><a href="#activity" id="toc-activity" class="nav-link" data-scroll-target="#activity">Activity</a></li>
+  <li><a href="#for-monday" id="toc-for-monday" class="nav-link" data-scroll-target="#for-monday">For Monday</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Day Four: Binary Oppositions of Big Data</h1>
+<p class="subtitle lead">SDS 237: Data Ethnography</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p> </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<section id="announcements" class="level1">
+<h1>Announcements</h1>
+<ul>
+<li>Please merge your branches into main!</li>
+<li>Be sure not to close the Feedback pull request.</li>
+<li>Be sure to fill out CATME survey for next week.</li>
+</ul>
+<hr>
+<p>class: center, middle # What were three takeaways from class on Monday?</p>
+<hr>
+<p>class: center, middle # Pull out a piece of paper, and draw a line down the center. On the left side, list adjectives that people use to describe “good” data. On the right side, write the opposite of each word you wrote on the left side.</p>
+<hr>
+</section>
+<section id="turn-to-your-neighbor-and-discuss" class="level1">
+<h1>Turn to your neighbor and discuss:</h1>
+<ul>
+<li>What data discourses are the words you wrote on the left side embedded within?</li>
+<li>Can you identify any terms that might fit in between these opposites?</li>
+</ul>
+<hr>
+</section>
+<section id="binary-oppositions" class="level1">
+<h1>Binary Oppositions</h1>
+<p>.pull-left[ * Looking at the world through pairs of terms that we consider to have the opposite meaning * Examples include: * Real/fake * Objective/subjective * Nature/culture * Binary oppositions are reductionist, or oversimplify complexity * Binary oppositions are rooted in ideologies and disseminated through discourse]</p>
+<p>.pull-right[</p>
+<p><img src="https://cdn.pixabay.com/photo/2012/04/23/15/52/black-38654_1280.png" class="img-fluid"> ]</p>
+<hr>
+</section>
+<section id="hierarchies-in-binary-oppositions" class="level1">
+<h1>Hierarchies in Binary Oppositions</h1>
+<p>.pull-left[ * In dominant discourse, one half of a binary opposition tends to be positioned as superior than the other * One half tends to get treated as normal or pure, and other as a deviation from the normal, or tainted * Binary oppositions can reinforce privilege * What are some examples of some hiearchical binary oppositions?]</p>
+<p>.pull-right[</p>
+<p><img src="https://cdn.pixabay.com/photo/2012/04/23/15/52/black-38654_1280.png" class="img-fluid"> ]</p>
+<hr>
+</section>
+<section id="natureculture" class="level1">
+<h1>Nature/Culture</h1>
+<ul>
+<li>Countless domains (disciplines, newspaper headings, etc.) organized around the divisions between nature and culture</li>
+<li>Nature is often associated with purity, innateness, biology, or rawness.</li>
+<li>Culture is seen as ‘Other’ to what is natural
+<ul>
+<li>e.g.&nbsp;human judgments bias science and decision-making</li>
+<li>e.g.&nbsp;human cultures destroy the Earth’s purity</li>
+</ul></li>
+<li>Feminist critiques:
+<ul>
+<li>Shows how purity is political</li>
+<li>Argues that we can’t tell where nature stops and culture starts</li>
+<li>Shows how the divisions justify treating certain social groups as superior and others as inferior</li>
+<li>Refers to natureculture: hybrids reverse the logic of binary oppositions</li>
+</ul></li>
+</ul>
+<hr>
+<p>class: center, middle # What are some of the discursive risks of talking about raw data?</p>
+<hr>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Good</th>
+<th>Bad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Raw</td>
+<td>Cooked</td>
+</tr>
+<tr class="even">
+<td>Clean</td>
+<td>Dirty</td>
+</tr>
+<tr class="odd">
+<td>Objective</td>
+<td>Subjective</td>
+</tr>
+<tr class="even">
+<td>Transparent</td>
+<td>Opaque</td>
+</tr>
+<tr class="odd">
+<td>Rigid</td>
+<td>Loose</td>
+</tr>
+<tr class="even">
+<td>Neat</td>
+<td>Scruffy</td>
+</tr>
+<tr class="odd">
+<td>Neutral</td>
+<td>Partial</td>
+</tr>
+<tr class="even">
+<td>Scientific</td>
+<td>Political</td>
+</tr>
+<tr class="odd">
+<td>Certain</td>
+<td>Uncertain</td>
+</tr>
+<tr class="even">
+<td>Observed</td>
+<td>Interpreted</td>
+</tr>
+<tr class="odd">
+<td>Real</td>
+<td>Constructed</td>
+</tr>
+<tr class="even">
+<td>Unbiased</td>
+<td>Biased</td>
+</tr>
+<tr class="odd">
+<td>Accurate</td>
+<td>Inaccurate</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>class: center, middle # How do the metaphors discussed in this week’s reading map on to these binary oppositions?</p>
+<hr>
+</section>
+<section id="activity" class="level1">
+<h1>Activity</h1>
+<div style="max-width:854px">
+<div style="position:relative;height:0;padding-bottom:56.25%">
+<iframe src="https://embed.ted.com/talks/lang/en/kenneth_cukier_big_data_is_better_data" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen="">
+</iframe>
+</div>
+</div>
+<hr>
+<p>class: center, middle # What were three takeaways from today?</p>
+<hr>
+</section>
+<section id="for-monday" class="level1">
+<h1>For Monday</h1>
+<ul>
+<li>Notes on ethnography readings</li>
+<li>Merge your branch into main.</li>
+<li>Let me know if you’d like to lead a class discussion</li>
+<li>CATME survey</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

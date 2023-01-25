@@ -68,6 +68,16 @@ execute:
 
 ---
 
+## Reading Discussion
+
+-   Facilitator: Introduces the question. Keeps time. Points out when the group has gone on a tangent. Encourages everyone to share thoughts. 
+-   Connector: Draws connections across peer contributions. Also connects to current events or "real world" examples.
+-   Summarizer: Keeps track (via notes) of the most important points made in the conversation. At a summary break and at the end of discussion, recites a summary of *three* key points made so far. 
+-   Devil's Advocate: Offers counter-arguments and polite critiques to keep the conversation. 
+-   Reporter: Reports the key points from the conversation out the the class at the conclusion of the exercise.
+
+---
+
 ## Feminist Epistemologies
 
 - All knowledge is **embodied**
@@ -86,7 +96,6 @@ marsroverdriver, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, 
 
 ---
 
-# Small group discussion: What do we mean when we talk about **objectivity**?
 
 
 

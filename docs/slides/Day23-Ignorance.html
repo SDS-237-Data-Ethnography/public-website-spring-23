@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lindsay Poirier   Statistical &amp; Data Sciences, Smith College  ">
+
+<title>Day Twenty-Three: Data Agnotology</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../css/custom.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">SDS 237: Data Ethnography</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Syllabus</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../grading_contract.html">Grading Contract</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../learning_dimensions.html">Learning Dimensions</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html">Schedule</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#feminist-arguments-on-the-study-of-ignorance" id="toc-feminist-arguments-on-the-study-of-ignorance" class="nav-link active" data-scroll-target="#feminist-arguments-on-the-study-of-ignorance">Feminist arguments on the study of ignorance</a></li>
+  <li><a href="#feminist-epistemologies" id="toc-feminist-epistemologies" class="nav-link" data-scroll-target="#feminist-epistemologies">Feminist Epistemologies</a></li>
+  <li><a href="#taxonomy-of-ignorance" id="toc-taxonomy-of-ignorance" class="nav-link" data-scroll-target="#taxonomy-of-ignorance">Taxonomy of Ignorance</a></li>
+  <li><a href="#big-tobacco-hides-cancer-risks" id="toc-big-tobacco-hides-cancer-risks" class="nav-link" data-scroll-target="#big-tobacco-hides-cancer-risks">Big Tobacco Hides Cancer Risks</a></li>
+  <li><a href="#merchants-of-doubt" id="toc-merchants-of-doubt" class="nav-link" data-scroll-target="#merchants-of-doubt">Merchants of Doubt</a></li>
+  <li><a href="#medical-funding" id="toc-medical-funding" class="nav-link" data-scroll-target="#medical-funding">Medical Funding</a></li>
+  <li><a href="#our-bodies-ourselves" id="toc-our-bodies-ourselves" class="nav-link" data-scroll-target="#our-bodies-ourselves">Our Bodies Ourselves</a></li>
+  <li><a href="#environmental-testing-following-hurricane-katrina" id="toc-environmental-testing-following-hurricane-katrina" class="nav-link" data-scroll-target="#environmental-testing-following-hurricane-katrina">Environmental Testing following Hurricane Katrina</a></li>
+  <li><a href="#colony-collapse-disease" id="toc-colony-collapse-disease" class="nav-link" data-scroll-target="#colony-collapse-disease">Colony Collapse Disease</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Day Twenty-Three: Data Agnotology</h1>
+<p class="subtitle lead">SDS 237: Data Ethnography</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p> </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p>class: center, middle # Agnotology: the study of ignorance or doubt as invoked by various cultural forces</p>
+<hr>
+<section id="feminist-arguments-on-the-study-of-ignorance" class="level1">
+<h1>Feminist arguments on the study of ignorance</h1>
+<ol type="1">
+<li>Ignorance is more than a gap in knowledge.</li>
+<li>“Ignorance, like knowledge, is situated.”</li>
+</ol>
+<blockquote class="blockquote">
+<p>Tuana, Nancy. 2006. “The Speculum of Ignorance: The Women’s Health Movement and Epistemologies of Ignorance.” <em>Hypatia</em> 21 (3): 1–19. https://doi.org/10.1111/j.1527-2001.2006.tb01110.x.</p>
+</blockquote>
+<hr>
+</section>
+<section id="feminist-epistemologies" class="level1">
+<h1>Feminist Epistemologies</h1>
+<p>.pull-left[</p>
+<ul>
+<li>All knowledge is <strong>embodied</strong></li>
+<li>Bodies are situated in certain social positions and have a finite point of view (Haraway 1991)</li>
+<li>Knowledge is tied to particular standpoints</li>
+<li><em>Stronger</em> objectivity achieved by diversifying standpoints ]</li>
+</ul>
+<p>.pull-right[ <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Traquair_House_Maze.jpg" class="img-fluid"></p>
+<p>]</p>
+<hr>
+</section>
+<section id="taxonomy-of-ignorance" class="level1">
+<h1>Taxonomy of Ignorance</h1>
+<ul>
+<li>Engineered Ignorance</li>
+<li>Undone Science</li>
+<li>Organized Ignorance</li>
+<li>Loving Ignorance</li>
+</ul>
+<hr>
+<p>class: center, middle # Engineered ignorance: Knowledge that gets deliberately hidden from the public</p>
+<hr>
+</section>
+<section id="big-tobacco-hides-cancer-risks" class="level1">
+<h1>Big Tobacco Hides Cancer Risks</h1>
+<ul>
+<li>Early 1950s, considerable expansion of research on tobacco health risks (e.g.&nbsp;lung cancer)</li>
+<li>Tobacco industry seeks to produce knowledge that will undo effects of emerging research:
+<ul>
+<li>Enlisted public relations firm Hill &amp; Knowlton</li>
+<li>Determined that advertising won’t work because self-interested by definition</li>
+<li>Sought out credentialed medical skeptics to engineer controversy</li>
+<li>Created Tobacco Industry Research Committee and funded research to sew doubt/uncertainty</li>
+</ul></li>
+</ul>
+<hr>
+<p>.pull-left[ <img src="https://ibiome.files.wordpress.com/2009/12/d1aed-6a00d83453609069e20120a7481ab0970b-pi.jpg?w=233&amp;zoom=2" class="img-fluid">] .pull-right[</p>
+<p><img src="https://ibiome.files.wordpress.com/2009/12/926ab-6a00d83453609069e20128764b0e12970c-pi.jpg?w=343&amp;zoom=2" class="img-fluid"></p>
+<p>]</p>
+<hr>
+</section>
+<section id="merchants-of-doubt" class="level1">
+<h1>Merchants of Doubt</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j8ii9zGFDtc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<hr>
+<p>class: center, middle # Undone science: Areas of research that go unfunded, left incomplete, or get ignored</p>
+<blockquote class="blockquote">
+<p>Frickel, Scott, Sahra Gibbon, Jeff Howard, Joanna Kempner, Gwen Ottinger, and David J. Hess. 2010. “Undone Science: Charting Social Movement and Civil Society Challenges to Research Agenda Setting.” Science, Technology &amp; Human Values 35 (4): 444–73. https://doi.org/10.1177/0162243909345836.</p>
+</blockquote>
+<hr>
+</section>
+<section id="medical-funding" class="level1">
+<h1>Medical Funding</h1>
+<ul>
+<li>Nature reports that much medical funding goes to the “big three” - HIV/AIDS, malaria and tuberculosis</li>
+<li>Funding diverted away from “neglected tropical diseases”
+<ul>
+<li>Impact billions of people and disproportionately impact most vulnerable populations</li>
+<li>Examples: dengue, leprosy, trachoma</li>
+</ul></li>
+<li>Covid-19 further diverted funding from these programs</li>
+</ul>
+<hr>
+</section>
+<section id="our-bodies-ourselves" class="level1">
+<h1>Our Bodies Ourselves</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eeEa7qHtWOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<blockquote class="blockquote">
+<p>Tuana, Nancy. 2006. “The Speculum of Ignorance: The Women’s Health Movement and Epistemologies of Ignorance.” <em>Hypatia</em> 21 (3): 1–19. https://doi.org/10.1111/j.1527-2001.2006.tb01110.x.</p>
+</blockquote>
+<hr>
+<p>class: center, middle # Organized Ignorance: Knowledge that doesn’t get produced because of the way science is organized</p>
+<blockquote class="blockquote">
+<p>Frickel, Scott, and M. Bess Vincent. 2007. “Hurricane Katrina, Contamination, and the Unintended Organization of Ignorance.” Technology in Society, Perspectives on Hurricane Katrina, 29 (2): 181–88. https://doi.org/10.1016/j.techsoc.2007.01.007.</p>
+</blockquote>
+<hr>
+</section>
+<section id="environmental-testing-following-hurricane-katrina" class="level1">
+<h1>Environmental Testing following Hurricane Katrina</h1>
+<ul>
+<li>Only test contaminants designated by law (&lt;200 of 8200 in TSCA) on public properties</li>
+<li>Tend to test where there was flooding, not where there may be the most contaminants
+<ul>
+<li>Most serious flooding escaped “sliver along the river” - location of the city’s industrial corridor</li>
+<li>Untested areas include several brownfields and areas with history of manufacturing expansion</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="colony-collapse-disease" class="level1">
+<h1>Colony Collapse Disease</h1>
+<ul>
+<li>US beekeepers have lost almost 1/3 of bees every year since 2006</li>
+<li>Scientific studies of insecticides on bees were designed to test the <em>individual lethal</em> effects of a chemical on a bee population
+<ul>
+<li>Part of a “control-oriented” scientific culture</li>
+</ul></li>
+<li>Failed to account for slow, cumulative effects over time and the interactions of chemicals and pathogens</li>
+</ul>
+<blockquote class="blockquote">
+<p>Kleinman, Daniel Lee, and Sainath Suryanarayanan. 2013. “Dying Bees and the Social Production of Ignorance.” Science, Technology &amp; Human Values 38 (4): 492–517. https://doi.org/10.1177/0162243912442575.</p>
+</blockquote>
+<hr>
+<p>class: center, middle # Ignorance as humility, or loving ignorance</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
