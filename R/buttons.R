@@ -9,7 +9,7 @@ create_standards_button <- function(text, type, size){
     bs_button(toupper(text), "info", size)
   }
   else if(type == "critical-thinking"){
-    bs_button(toupper(text), "warning", size)
+    bs_button(toupper(text), "primary", size)
   }
 }
 
