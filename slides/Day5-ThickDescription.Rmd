@@ -23,10 +23,7 @@ output:
 options(htmltools.dir.version = FALSE)
 ```
 
-```{r xaringan-themer, include=FALSE}
-# sds::duo_smith()
-sds::mono_light_smith()
-```
+
 
 # Announcements
 
@@ -48,7 +45,7 @@ class: center, middle
 
 ---
 
-# Turn to your neighbor and discuss:
+## Turn to your neighbor and discuss:
 
 * How would these research projects look different?
 

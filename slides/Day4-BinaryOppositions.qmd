@@ -69,7 +69,7 @@ options(htmltools.dir.version = FALSE)
 
 ---
 
-# Nature/Culture
+## Nature/Culture
 
 - Countless domains (disciplines, newspaper headings, etc.) organized around the divisions between nature and culture
 - Nature is often associated with purity, innateness, biology, or rawness.
