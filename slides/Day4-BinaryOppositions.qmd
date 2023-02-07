@@ -37,7 +37,7 @@ options(htmltools.dir.version = FALSE)
 
 ---
 
-# Pull out a piece of paper, and draw a line down the center. On the left side, list adjectives that people use to describe "good" data. On the right side, write the opposite of each word you wrote on the left side. 
+## Pull out a piece of paper, and draw a line down the center. On the left side, list adjectives that people use to describe "good" data. On the right side, write the opposite of each word you wrote on the left side. 
 
 ---
 
