@@ -42,6 +42,7 @@ class: center, middle
 
 class: center, middle
 # Think about a category or label that institutions assign to a group of people. Free-write for about 2 minutes on the following prompt: How does the existence of this category or label impact certain social groups?
+
 ---
 
 # Turn to your neighbor and discuss:
