@@ -48,15 +48,6 @@ class: center, middle
 
 ---
 
-# Announcements
-
-* Optional peer review (+2 community labor points)
-* Optional meetings to discuss first fieldnotes with Rose (+1 community labor point)
-* Survey for interest in workshop for mini-project 1 (+2 community labor points)
-* Moving to in-person office hours on Monday online. Wednesday will remain virtual. 
-
----
-
 class: center, middle
 # What were some takeaways from Monday's class?
 
