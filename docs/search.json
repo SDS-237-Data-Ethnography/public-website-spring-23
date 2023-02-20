@@ -501,14 +501,14 @@
     "href": "schedule.html#february-21-2023",
     "title": "Schedule",
     "section": "February 21, 2023",
-    "text": "February 21, 2023\n\nEthics of Qualitative Research\nPOWER\n\nDue TodayFurther Resources\n\n\n Team Contract\n Fieldnote 1"
+    "text": "February 21, 2023\n\nEthics of Qualitative Research\nPOWER\n\nDue TodayFurther Resources\n\n\n Team Contract\n Fieldnote 1\n\n\n Course slides are here."
   },
   {
     "objectID": "schedule.html#february-23-2023",
     "href": "schedule.html#february-23-2023",
     "title": "Schedule",
     "section": "February 23, 2023",
-    "text": "February 23, 2023\n\nDocumenting Datasets\nDATA DOCUMENTATION COMMUNICATING (IN) CONTEXT\n\nDue TodayFurther Resources\n\n\n Gebru, Timnit, Jamie Morgenstern, Briana Vecchione, et al. (2020). “Datasheets for Datasets”. In: arXiv:1803.09010 [cs]. arXiv: 1803.09010. (Visited on Jan. 24, 2021).\n Get approval for dataset\n\n\n Potential final project datasets are here.\n Bender, Emily M. and Batya Friedman (2018). “Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science”. In: Transactions of the Association for Computational Linguistics 6, pp. 587-604. (Visited on Aug. 20, 2021)."
+    "text": "February 23, 2023\n\nDocumenting Datasets\nDATA DOCUMENTATION COMMUNICATING (IN) CONTEXT\n\nDue TodayFurther Resources\n\n\n Gebru, Timnit, Jamie Morgenstern, Briana Vecchione, et al. (2020). “Datasheets for Datasets”. In: arXiv:1803.09010 [cs]. arXiv: 1803.09010. (Visited on Jan. 24, 2021).\n Get approval for dataset\n\n\n Course slides are here\n Potential final project datasets are here.\n Bender, Emily M. and Batya Friedman (2018). “Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science”. In: Transactions of the Association for Computational Linguistics 6, pp. 587-604. (Visited on Aug. 20, 2021)."
   },
   {
     "objectID": "schedule.html#february-28-2023",
@@ -880,5 +880,103 @@
     "title": "Day Seven: Data Looping Effects",
     "section": "Hacking’s Looping Effect",
     "text": "Hacking’s Looping Effect\n > Tekin, Serife. 2014. “The Missing Self in Hacking’s Looping Effect.” In Classifying Psychopathology: Mental Kinds and Natural Kinds, edited by Harold Kincaid and Jacqueline A. Sullivan. MIT Press."
+  },
+  {
+    "objectID": "slides/Day9-DataDocumentation.html#ws-of-metadata",
+    "href": "slides/Day9-DataDocumentation.html#ws-of-metadata",
+    "title": "Day Nine: Data Documentation",
+    "section": "5 W’s of Metadata",
+    "text": "5 W’s of Metadata"
+  },
+  {
+    "objectID": "slides/Day9-DataDocumentation.html#example-library-catalog",
+    "href": "slides/Day9-DataDocumentation.html#example-library-catalog",
+    "title": "Day Nine: Data Documentation",
+    "section": "Example: Library Catalog",
+    "text": "Example: Library Catalog"
+  },
+  {
+    "objectID": "slides/Day9-DataDocumentation.html#metadata-schemas",
+    "href": "slides/Day9-DataDocumentation.html#metadata-schemas",
+    "title": "Day Nine: Data Documentation",
+    "section": "Metadata Schemas",
+    "text": "Metadata Schemas\n\nA standardized labeling system for cataloging or describing data\nEnables search engines to index data by certain criteria\nExamples:\n\nSort by “date created”\nRetrieve all results from a specific “author/creator”\nFilter results to a specific “subject”\nExclude results from a specific “publisher”"
+  },
+  {
+    "objectID": "slides/Day9-DataDocumentation.html#example-citation-manager",
+    "href": "slides/Day9-DataDocumentation.html#example-citation-manager",
+    "title": "Day Nine: Data Documentation",
+    "section": "Example: Citation Manager",
+    "text": "Example: Citation Manager"
+  },
+  {
+    "objectID": "slides/Day9-DataDocumentation.html#whats-the-difference-between-administrative-and-descriptive-metadata",
+    "href": "slides/Day9-DataDocumentation.html#whats-the-difference-between-administrative-and-descriptive-metadata",
+    "title": "Day Nine: Data Documentation",
+    "section": "What’s the difference between administrative and descriptive metadata?",
+    "text": "What’s the difference between administrative and descriptive metadata?"
+  },
+  {
+    "objectID": "slides/Day9-DataDocumentation.html#data-dictionaries",
+    "href": "slides/Day9-DataDocumentation.html#data-dictionaries",
+    "title": "Day Nine: Data Documentation",
+    "section": "Data Dictionaries",
+    "text": "Data Dictionaries\n\nDocuments for holding descriptive metadata\nDefine the variables in a dataset and the values that may fill in those variables\nAre not always as descriptive as we’d like them to be"
+  },
+  {
+    "objectID": "slides/Day9-DataDocumentation.html#example-nyc-metadata-for-all",
+    "href": "slides/Day9-DataDocumentation.html#example-nyc-metadata-for-all",
+    "title": "Day Nine: Data Documentation",
+    "section": "Example: NYC Metadata for All",
+    "text": "Example: NYC Metadata for All"
+  },
+  {
+    "objectID": "slides/Day9-DataDocumentation.html#for-monday",
+    "href": "slides/Day9-DataDocumentation.html#for-monday",
+    "title": "Day Nine: Data Documentation",
+    "section": "For Monday",
+    "text": "For Monday\n\nQuestions to consider:\n\nWhat does Biruk mean when they refer to “translation” in this chapter?\nWhere do we see looping effects in this chapter? What gets “lost in translation”?"
+  },
+  {
+    "objectID": "slides/Day8-ResearchEthics.html#free-write-for-the-next-2-minutes-youve-submitted-your-first-assignment---both-individual-and-group.-what-have-you-learned-so-far-thats-sticking-with-you-the-most-what-questions-do-you-have-about-course-infrastructure-what-challenges-have-you-run-into",
+    "href": "slides/Day8-ResearchEthics.html#free-write-for-the-next-2-minutes-youve-submitted-your-first-assignment---both-individual-and-group.-what-have-you-learned-so-far-thats-sticking-with-you-the-most-what-questions-do-you-have-about-course-infrastructure-what-challenges-have-you-run-into",
+    "title": "Day Eight: Research Ethics",
+    "section": "Free-write for the next 2 minutes: You’ve submitted your first assignment - both individual and group. What have you learned so far that’s sticking with you the most? What questions do you have about course infrastructure? What challenges have you run into?",
+    "text": "Free-write for the next 2 minutes: You’ve submitted your first assignment - both individual and group. What have you learned so far that’s sticking with you the most? What questions do you have about course infrastructure? What challenges have you run into?"
+  },
+  {
+    "objectID": "slides/Day8-ResearchEthics.html#i-encourage-you-to-come-to-office-hours-if",
+    "href": "slides/Day8-ResearchEthics.html#i-encourage-you-to-come-to-office-hours-if",
+    "title": "Day Eight: Research Ethics",
+    "section": "I encourage you to come to office hours if…",
+    "text": "I encourage you to come to office hours if…\n\nYou’d like to discuss strategies for managing the reading/workload.\nYou’d like clarifications on any of the assignment expectations/course infrastructure.\nYou’d like to review certain concepts discussed in lecture or the readings.\nYou’d like to chat about opportunities for exploring more about data ethnography.\nYou’re stressed and need some positive affirmation."
+  },
+  {
+    "objectID": "slides/Day8-ResearchEthics.html#common-rule",
+    "href": "slides/Day8-ResearchEthics.html#common-rule",
+    "title": "Day Eight: Research Ethics",
+    "section": "Common Rule",
+    "text": "Common Rule\n\nIn the US, research organizations receiving federal funding are subject to the Common Rule\n\nLaws and regulations regarding how Institutional Review Boards are to operate\nIRBs are organizational bodies that review the ethics of human subjects research in order to protect human welfare, rights, and privacy before a study gets carried out\n\nUsually composed of representatives from an institution with a diverse background"
+  },
+  {
+    "objectID": "slides/Day8-ResearchEthics.html#tuskegee-study",
+    "href": "slides/Day8-ResearchEthics.html#tuskegee-study",
+    "title": "Day Eight: Research Ethics",
+    "section": "Tuskegee Study",
+    "text": "Tuskegee Study\n\nConducted from 1932 to 1972 by US Public Health Services and Center for Disease Control, in collaboration with Tuskegee University in Alabama\nInvolved 400 African Americans with syphilis\nStudy of leaving the disease untreated even though it was treatable\n\nWere told they would receive free medical care\nNever informed of their diagnosis\nProvided with placebos and ineffective methods"
+  },
+  {
+    "objectID": "slides/Day8-ResearchEthics.html#facebooks-emotional-contagion-study",
+    "href": "slides/Day8-ResearchEthics.html#facebooks-emotional-contagion-study",
+    "title": "Day Eight: Research Ethics",
+    "section": "Facebook’s Emotional Contagion Study",
+    "text": "Facebook’s Emotional Contagion Study\n\nJanuary 2012, Facebook data scientists manipulated what 700,000 users saw on feeds to examine emotional contagion\n\nSome shown happy, positive content\nOthers shown sad, negative content\n\nLegal?\nEthical?"
+  },
+  {
+    "objectID": "slides/Day8-ResearchEthics.html#ethics-of-ethnographic-research",
+    "href": "slides/Day8-ResearchEthics.html#ethics-of-ethnographic-research",
+    "title": "Day Eight: Research Ethics",
+    "section": "Ethics of ethnographic research",
+    "text": "Ethics of ethnographic research\n\nEthnography different than many other forms of human subjects research in that it takes place in natural settings vs in clinical settings\nQuestion of how to balance benefits of the research with the potential harms posed to the participants\nPotential harms:\n\nReputation\nDisclosure of personal information\nDisruption of relationships\nLoss of claims"
   }
 ]
