@@ -31,6 +31,11 @@ options(htmltools.dir.version = FALSE)
 ```
 
 
+## Jot down some ideas of what this means to you: 
+
+> This chapter makes one basic point: the work of producing, preserving, and sharing data reshapes the organizational, technological, and cultural worlds around them. - Jackson and Ribes, 2013
+
+---
 
 ## Reminders
 
@@ -40,11 +45,6 @@ options(htmltools.dir.version = FALSE)
 ---
 
 # What did we learn on Tuesday about the why's and how's of participant observation?
-
-
----
-
-> This chapter makes one basic point: the work of producing, preserving, and sharing data reshapes the organizational, technological, and cultural worlds around them. - Jackson and Ribes, 2013
 
 
 ---
