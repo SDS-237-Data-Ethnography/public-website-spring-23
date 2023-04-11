@@ -585,7 +585,7 @@
     "href": "schedule.html#april-11-2023",
     "title": "Schedule",
     "section": "April 11, 2023",
-    "text": "April 11, 2023\n\nMobilizing Data: Making Numbers Actionable\nDISCOURSE ANALYSIS SITUATING KNOWLEDGE MOBILIZATION\n\nDue TodayFurther Resources\n\n\n Ottinger, Gwen and Rachel Zurer (2011). New Voices, New Approaches: Drowning in Data. En-US. (Visited on Dec. 13, 2018).\n Work on discourse analysis\n Mini-Project 2\n\n\n Pine, Kathleen H. and Max Liboiron (2015). “The Politics of Measurement and Action”. In: Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems. New York, NY, USA: Association for Computing Machinery, pp. 3147-3156. ISBN: 978-1-4503-3145-6. (Visited on Aug. 30, 2021).\n Dourish, Paul and Edgar Gómez Cruz (2018). “Datafication and data fiction: Narrating data and narrating with data”. En. In: Big Data & Society 5.2. Publisher: SAGE Publications Ltd, p. 2053951718784083. (Visited on Apr. 05, 2021)."
+    "text": "April 11, 2023\n\nMobilizing Data: Making Numbers Actionable\nDISCOURSE ANALYSIS SITUATING KNOWLEDGE MOBILIZATION\n\nDue TodayFurther Resources\n\n\n Ottinger, Gwen and Rachel Zurer (2011). New Voices, New Approaches: Drowning in Data. En-US. (Visited on Dec. 13, 2018).\n Work on discourse analysis\n Mini-Project 2\n\n\n Course slides are here.\n Pine, Kathleen H. and Max Liboiron (2015). “The Politics of Measurement and Action”. In: Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems. New York, NY, USA: Association for Computing Machinery, pp. 3147-3156. ISBN: 978-1-4503-3145-6. (Visited on Aug. 30, 2021).\n Dourish, Paul and Edgar Gómez Cruz (2018). “Datafication and data fiction: Narrating data and narrating with data”. En. In: Big Data & Society 5.2. Publisher: SAGE Publications Ltd, p. 2053951718784083. (Visited on Apr. 05, 2021)."
   },
   {
     "objectID": "schedule.html#april-13-2023",
@@ -1349,5 +1349,68 @@
     "title": "Day Seventeen: Institutional Incentives",
     "section": "Discursive Risk of Regulatory Burden",
     "text": "Discursive Risk of Regulatory Burden\n\nScope of dataset determined by reporting thresholds\nStakeholders have advocated for strengthening or loosening thresholds in line with certain political commitments\n“Regulatory burden” discourse has been powerful tool for loosening reporting requirements\n\n\nFinally, the information that ultimately appears in a disclosure dataset is often shaped by a series of legal standards regarding who has to report and when they have to report. These standards are not neutral, and tend to evolve as stakeholders with certain political commitments towards transparency and institutional accountability call for amendments. Certain stakeholders advocate on behalf of stricter requirements and more data reporting in efforts to secure transparency and accountability, whereas other stakeholders advocate on behalf of loosening the requirements. Notably, one of the most powerful weapons against strengthening disclosure dataset programs has been discourse around “regulatory burden”. Businesses cite the cost and lack of feasibility of filling out paperwork when advocating against data collection. For instance, under the George W. Bush Administration, the TRI “Burden Reduction Rule” significantly raised the threshold regarding how much pollution a facility needed to emit before reporting requirements kicked in. Just recently, amendments to HMDA raised the threshold regarding the volume of loans a bank needs a originate for reporting requirements to kick in. The pressures Covid-19 had placed on banks was cited as a reason for this change. … and regulatory burden discourse has been effectively leveraged to keep the US’s National Use of Force database – where police officers disclose when they use force against citizens – a voluntary data program.\nWhen regulatory burden discourse is successful, fewer institutions are required to report on fewer activities, diminishing what is tracked in the data. Thresholds tend to fluctuate in line with political changeover. For instance, the stringency of TRI reporting often correlates with the political leanings of presidential administrations. This has meant that the definitions underpinning disclosure datasets are quite malleable - subject to change in conjunction with different modes of social advocacy. This malleability is a double-edged sword for many community groups calling for increased accountability. In one sense, it ensures that disclosure programs can continuously be strengthened. However, changing reporting standards makes it difficult to perform year-to-year comparisons of the data. …which is often needed to measure whether institutions are “cleaning up” their acts.\nIn terms of data quality, this discursive risk calls into question the scope and comprehensiveness of the data."
+  },
+  {
+    "objectID": "slides/Day19-Mobilization.html#what-does-the-following-statement-mean-to-you",
+    "href": "slides/Day19-Mobilization.html#what-does-the-following-statement-mean-to-you",
+    "title": "Day Nineteen: Mobilizating Meaning",
+    "section": "What does the following statement mean to you?",
+    "text": "What does the following statement mean to you?\n\nOn April 10, 2023 at 9AM Northampton’s reported AQI was 54."
+  },
+  {
+    "objectID": "slides/Day19-Mobilization.html#turn-to-a-neighbor-and-discuss",
+    "href": "slides/Day19-Mobilization.html#turn-to-a-neighbor-and-discuss",
+    "title": "Day Nineteen: Mobilizating Meaning",
+    "section": "Turn to a neighbor and discuss:",
+    "text": "Turn to a neighbor and discuss:\n\nWhat information do we need to be able to interpret the meaning of the number 54 in the following slide?"
+  },
+  {
+    "objectID": "slides/Day19-Mobilization.html#what-is-evidence",
+    "href": "slides/Day19-Mobilization.html#what-is-evidence",
+    "title": "Day Nineteen: Mobilizating Meaning",
+    "section": "What is ‘evidence’?",
+    "text": "What is ‘evidence’?\n\nEtymologically dual meaning:\n\nTransparent, obvious, clear, speaking for itself\nAppearance or indication, requiring interpretation\n\n\n\nBiruk, Cal. 2018. Cooking Data: Culture and Politics in an African Research World. Illustrated edition. Durham: Duke University Press Books."
+  },
+  {
+    "objectID": "slides/Day19-Mobilization.html#turn-to-a-neighbor-and-discuss-1",
+    "href": "slides/Day19-Mobilization.html#turn-to-a-neighbor-and-discuss-1",
+    "title": "Day Nineteen: Mobilizating Meaning",
+    "section": "Turn to a neighbor and discuss:",
+    "text": "Turn to a neighbor and discuss:\n\nHow might this number mean different things to different social groups?\nHow is it meaningful to you?"
+  },
+  {
+    "objectID": "slides/Day19-Mobilization.html#interpretive-flexibility",
+    "href": "slides/Day19-Mobilization.html#interpretive-flexibility",
+    "title": "Day Nineteen: Mobilizating Meaning",
+    "section": "Interpretive Flexibility",
+    "text": "Interpretive Flexibility\n\nAnti-determinist frameworks\nRefers to the differing meanings that social groups assign to technologies\nExplain how technologies are “socially constructed”"
+  },
+  {
+    "objectID": "slides/Day19-Mobilization.html#mobilizing-data-narratives",
+    "href": "slides/Day19-Mobilization.html#mobilizing-data-narratives",
+    "title": "Day Nineteen: Mobilizating Meaning",
+    "section": "Mobilizing Data Narratives",
+    "text": "Mobilizing Data Narratives\n\nMobilization refers to the processes by which people prepare something to be put to use or into action\nStakeholders strategically engage in meaning-making activities around data\nShapes societal interpretations of data"
+  },
+  {
+    "objectID": "slides/Day19-Mobilization.html#framing-statistics",
+    "href": "slides/Day19-Mobilization.html#framing-statistics",
+    "title": "Day Nineteen: Mobilizating Meaning",
+    "section": "Framing Statistics",
+    "text": "Framing Statistics\n\nComparison/Ranking\n\nIs x more/less than y?\n\nStandards-Setting/Benchmarking\n\nDoes x meet z standard/benchmark?\n\nAppealing to Emotion/Lived Experience\n\nHow does x make me feel/relate to my life?"
+  },
+  {
+    "objectID": "slides/Day19-Mobilization.html#take-aways",
+    "href": "slides/Day19-Mobilization.html#take-aways",
+    "title": "Day Nineteen: Mobilizating Meaning",
+    "section": "Take-aways",
+    "text": "Take-aways\n\nThe meaning/significance of numbers is not self-evident.\nData becomes meaningful as stakeholders develop tools for narrating the significance of a number.\nEthnographers can study these meaning-making practices."
+  },
+  {
+    "objectID": "slides/Day19-Mobilization.html#announcements",
+    "href": "slides/Day19-Mobilization.html#announcements",
+    "title": "Day Nineteen: Mobilizating Meaning",
+    "section": "Announcements",
+    "text": "Announcements\n\n\n\nOptional group work time with Rose on Thursday.\nDon’t forget to fill out the group evaluations.\nAdditional enrichment option\n\nAttend this event and write 400-word memo analyzing the topic using one of the key concepts from data activism readings (Concept must be approved by me.)"
   }
 ]
