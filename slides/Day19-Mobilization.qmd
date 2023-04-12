@@ -85,8 +85,9 @@ options(htmltools.dir.version = FALSE)
 
 ## Turn to a neighbor and discuss:
 
+- How do you know if this is a big or small quantity?
+- Do you have a yardstick to help you determine this?
 - How might this number mean different things to different social groups?
-- How is it meaningful to you?
 
 ---
 

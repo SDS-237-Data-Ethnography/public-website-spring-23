@@ -41,6 +41,14 @@ Each row indicates what labor you need to complete in the course to earn the gra
 
 Descriptions of all written and project assignments, along with rubrics for qualitative assessment of each, will be made available to you in the GitHub repositories where you will submit work this semester. For an assignment to be considered complete, it must meet the minimum criteria outlined in the assignment description. It also must be completed "in good faith" - meaning in a way that demonstrates integrity to the spirit of the assignment. 
 
+## Final Project Resources
+
+This semester your project group will develop a user guide for a federal dataset. You will complete a series of exercises in class to support you in writing the guide. While these exercises will include both qualitative and computational exercises, the point of this project is not to perform a statistical analysis on this dataset. Instead, you will study the dataset ethnographically and strive to effectively communicate how the dataset came to be, how it has disseminated, how it can be used, and what some of its limitations are. 
+
+- [Project Description](https://github.com/SDS-237-Data-Ethnography/group-project)
+- [Rose's Project Guide Sheet](https://docs.google.com/document/d/18Up92NWlhryOQtP3u8x5t2LdFce_qHACYn6m2lF5pjw/edit?usp=sharing)
+- [Example User Guide](https://htmlpreview.github.io/?https://raw.githubusercontent.com/SDS-237-Data-Ethnography/sds-237-group-project-group-4/main/final-project.html?token=GHSAT0AAAAAABST4ULOFX54ODX7BDW5ZJSCZBBULVA)
+
 Below I've outlined completion criteria for the two non-written assignments for this course. 
 
 ### Reading Annotations
