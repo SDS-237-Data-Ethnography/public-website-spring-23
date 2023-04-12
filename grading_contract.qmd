@@ -47,6 +47,7 @@ This semester your project group will develop a user guide for a federal dataset
 
 - [Project Description](https://github.com/SDS-237-Data-Ethnography/group-project)
 - [Rose's Project Guide Sheet](https://docs.google.com/document/d/18Up92NWlhryOQtP3u8x5t2LdFce_qHACYn6m2lF5pjw/edit?usp=sharing)
+- [Dataset Loading Instructions](https://docs.google.com/document/d/1oCuDicX25irepKLAFTffOkMFpv4k7G_6Utozg4Tl5aU/edit#heading=h.j6tzimcx56bb)
 - [Example User Guide](https://htmlpreview.github.io/?https://raw.githubusercontent.com/SDS-237-Data-Ethnography/sds-237-group-project-group-4/main/final-project.html?token=GHSAT0AAAAAABST4ULOFX54ODX7BDW5ZJSCZBBULVA)
 
 Below I've outlined completion criteria for the two non-written assignments for this course. 
